@@ -91,7 +91,7 @@
 
     <!-- Question & Answer Section -->
 
-    <section class="container">
+    <section class="container mb-5">
       <hr />
       <h2 class="text-center my-4">Question & Answer</h2>
       <hr />
@@ -150,10 +150,21 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+              JavaScript event loop is a constantly running process that
+              coordinates the tasks between the call stack and callback queue to
+              achieve concurrency. The event loop is the secret behind
+              JavaScript asynchronous programming. The call stack is responsible
+              for keeping track of all the operations in line to be executed.
+              The event queue is responsible for sending new functions to the
+              call stack for processing. Whenever an asynchronous function is
+              called(like setTimeOut), it is sent to a browser API. These are
+              APIs built into the browser. We have a cyclic system for running
+              asynchronous operations in JavaScript. The language itself is
+              single-threaded, but the browser APIs act as separate threads. The
+              event loop facilitates this process; it constantly checks whether
+              the call stack is empty. If it is empty, new functions are added
+              from the event queue. If it is not, then the current function call
+              is processed.
             </div>
           </div>
         </div>
